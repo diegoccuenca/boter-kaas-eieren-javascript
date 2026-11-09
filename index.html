@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="utf-8">
+        <title>Boter-Kaas-en-Eieren PlusPlus</title>
+        <link href="./css/game.css" rel="stylesheet">
+    
+
+</head>
+    <body>
+    <div id="root">
+        <div id="settings-menu">
+            <div>
+                <label>Width:</label>
+                <input type="range" min="3" max="10" value="3" id="input-width">
+            </div>
+            <div>
+                <label>Height:</label>
+                <input type="range" min="3" max="10" value="3" id="input-height">
+            </div>
+            <div>
+                <label>Win condition:</label>
+                <input type="range" min="3" max="6" value="3" id="input-win-condition" oninput="this.nextElementSibling.value = this.value">
+                <output>3</output>
+            </div>
+        </div>
+        <div id="game">
+            <div id="board"></div>
+            <div id="score">
+                <div>
+                    <img src="./images/playerX.svg" alt="Speler X">
+                    <div id="score-x"></div>
+                </div>
+                <div>
+                    <img src="./images/playerO.svg" alt="Speler O">
+                    <div id="score-o">3</div>
+                </div>
+            </div>
+            <button id="btn-start">Play again</button>
+            <button id="btn-rest">Reset game</button>
+        </div>
+    </div>
+        <script src="./js/game.js" type="module"></script>
+    </body>
+</html>

@@ -1,0 +1,8 @@
+# macOS / editor
+.DS_Store
+__MACOSX/
+.vscode/
+
+# Persoonlijke schooldocumenten
+verslag.txt
+*studentnummer*
